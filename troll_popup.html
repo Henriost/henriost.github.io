@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wichtige Benachrichtigung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 150px;
+            background-color: #ffffff;
+            border: 2px solid #cccccc;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        h1 {
+            color: #e74c3c;
+        }
+        p {
+            font-size: 18px;
+            color: #555555;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <script>
+        function showPopup() {
+            setInterval(() => {
+                alert("‼️ Wichtige Benachrichtigung: Ihr Internet wird in 30 Minuten gesperrt wegen verdächtiger Aktivitäten. Bitte melden Sie sich sofort bei Ihrem Internetanbieter! ‼️");
+            }, 3000); // Alle 3 Sekunden ein Pop-up
+        }
+    </script>
+</head>
+<body onload="showPopup()">
+    <div class="container">
+        <h1>🚨 Wichtige Benachrichtigung 🚨</h1>
+        <p>Ihr Internet wurde wegen ungewöhnlicher Aktivitäten gesperrt! Bitte kontaktieren Sie sofort den Support, um Ihr Konto zu verifizieren.</p>
+        <button class="button" onclick="showPopup()">Erfahren Sie mehr</button>
+    </div>
+</body>
+</html>
+
+
+
